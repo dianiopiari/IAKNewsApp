@@ -17,15 +17,16 @@ import id.daprin.iaknewsapp.model.ArticlesItem;
 public class MainActivity extends AppCompatActivity {
 
     /*Recycler view perlu: VIewHolder, Adapter, LayoutManager */
-    @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
+    @BindView(R.id.recyclerView) RecyclerView mRecyclerView; //1
     LinearLayoutManager mLinearLayoutManager;
     NewsAdapter mAdapter;
     //test
+    ///mmmm
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+        ButterKnife.bind(this);//1
 
         //SETUP ADAPTER
         mAdapter = new NewsAdapter(GetDummyArticlesItem());
