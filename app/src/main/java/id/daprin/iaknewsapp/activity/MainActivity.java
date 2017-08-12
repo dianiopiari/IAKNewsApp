@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
     LinearLayoutManager mLinearLayoutManager;
     NewsAdapter mAdapter;
-
+    //test
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
